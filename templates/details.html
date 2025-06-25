@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Let's Trace - Details</title>
+</head>
+
+<body>
+    <div class="input-container">
+        <h1>Let's Trace</h1>
+        <div class="detail-container">
+            <h2>Search results of mobile Tracker</h2>
+            <div class="table">
+                <div class="row">
+                    <div class="column">MOBILE PHONE</div>
+                    <div class="second">{{Core}}</div>
+                </div>
+                <div class="row">
+                    <div class="column">TELECOMS CIRCLE / STATE</div>
+                    <div class="second">{{Timezone}}</div>
+                </div>
+                <div class="row">
+                    <div class="column">ORIGINAL NETWORK: (FIRST ALLOTED)</div>
+                    <div class="second">{{Carrier}}</div>
+                </div>
+                <div class="row">
+                    <div class="column">Valid Number</div>
+                    <div class="second">{{Valid}}</div>
+                </div>
+                <div class="row">
+                    <div class="column">Possible Number</div>
+                    <div class="second">{{Possible}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

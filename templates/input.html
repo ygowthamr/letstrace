@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Let's Trace - Home</title>
+</head>
+
+<body>
+    <div class="input-container">
+        <h1>Let's Trace</h1>
+        <form class="box" action="/dashboard/results" method="post">
+            {% csrf_token %}
+            <label for="number-input">Enter the mobile number to trace</label>
+            <p>+91</p><input type="number" name="ph-number" placeholder="Number" required>
+            <button type="submit" id="trace-button">Trace</button>
+        </form>
+    </div>
+</body>
+
+</html>
